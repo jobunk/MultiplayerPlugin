@@ -15,14 +15,20 @@ void SMainMenuUI::Construct(const FArguments& args)
 
 	ChildSlot
 		[
-			SNew(SOverlay)
-			+ SOverlay::Slot()
-	+ SOverlay::Slot()
+		SNew(SOverlay)
+		+ SOverlay::Slot()
 		.HAlign(HAlign_Right)
 		.VAlign(VAlign_Bottom)
 		[
-			SNew(SVerticalBox)
-			+ SVerticalBox::Slot()
+	SNew(SVerticalBox)
+	+ SVerticalBox::Slot()
+		[
+			SNew(SEditableTextBox)
+			.Style(&MenuStyle->TextBox)
+		.Text(FText::FromString("Kitchen"))
+		.OnTextChanged_Raw(this, &SMainMenuUI::GetTextFromInput)
+		]
+	+ SVerticalBox::Slot()
 		[
 			SNew(SButton)
 			.ButtonStyle(&MenuStyle->MenuButtonStyle)
@@ -66,4 +72,19 @@ FReply SMainMenuUI::JoinSessionClicked()
 	MainMenuHUD->LoadServerList();
 
 	return FReply::Handled();
+}
+
+void SMainMenuUI::GetTextFromInput(const FText & Text)
+{
+	if (GEngine)
+	{
+		try
+		{
+			Cast<UMultiplayerGI>(((UGameEngine*)GEngine)->GameInstance)->MapChangeEvent(Text.ToString());
+		}
+		catch (const std::exception&)
+		{
+
+		}
+	}
 }

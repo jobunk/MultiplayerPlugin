@@ -30,4 +30,7 @@ public:
 
 	// Style for the menu
 	const struct FGlobalStyle* MenuStyle;
+
+	// Handles text changes
+	void GetTextFromInput(const FText & Text);
 };

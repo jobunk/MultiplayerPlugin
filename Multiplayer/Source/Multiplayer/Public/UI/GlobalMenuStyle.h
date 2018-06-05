@@ -35,6 +35,10 @@ struct MULTIPLAYER_API FGlobalStyle : public FSlateWidgetStyle
 	// Style that defines the text for our menu title. 
 	UPROPERTY(EditAnywhere, Category = Appearance)
 		FTextBlockStyle MenuTitleStyle;
+
+	// Style for the editable text box
+	UPROPERTY(EditAnywhere, Category = Appearance)
+		FEditableTextBoxStyle TextBox;
 };
 
 // Provides a widget style container to allow us to edit properties in-editor

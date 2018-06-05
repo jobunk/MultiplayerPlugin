@@ -24,6 +24,9 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent)
 	void JoinSessionEvent();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void MapChangeEvent(const FString & s);
 	
 	UPROPERTY(BlueprintReadWrite)
 	int NumberOfSessions;
