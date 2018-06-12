@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
+#include "Multiplayer.h"
 #include "MultiplayerGI.generated.h"
 
 /**
@@ -30,4 +31,23 @@ public:
 	
 	UPROPERTY(BlueprintReadWrite)
 	int NumberOfSessions;
+
+	//TArray<FOnlineSessionSearchResult> SessionsC;
+
+	//FString MapToOpenC = "Kitchen";
+
+	////C++ implementation of the event that is called when the user wants to create a new session
+	//void CreateSessionEventC();
+
+	////C++ implementation of the event that is called when the user wants to find an existing session
+	//void FindSessionEventC();
+
+	////C++ implementation of the event that is called when the user wants to join the found session
+	//void JoinSessionEventC();
+
+	///**
+	//C++ implementation of the event that is called when the map the user wants to open changes
+	//@param s - Name of the new map to open
+	//*/
+	//void MapChangeEventC(const FString & s);
 };
