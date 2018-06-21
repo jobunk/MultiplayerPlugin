@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
 #include "Multiplayer.h"
+#include "UVisionlogger.h"
 #include "MultiplayerGI.generated.h"
 
 /**

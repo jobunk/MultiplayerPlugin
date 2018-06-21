@@ -26,6 +26,8 @@ Player 0 is the client who created the lobby and the other clients count up from
 If your game is not a VR game you want to delete the "Enable HMD" function from "MyMultiplayerGI".
 Everything else should work fine. 
 
+In the "FirstPersonRecorder" blueprint you may need to make some adjustments, in order for it to get the transform of your VRPawn. 
+
 In your map make sure to set "Static Mesh Replicate" on every static mesh you want to interact with to true.
 In your VR pawn make sure every single component has "Component Replicates" activated. 
 On the pawn itself activate the following: "Always Relevant", "Replicate Movement", "Net Load on Client", "Replicates" and "Net Dormancy -> DORM Never".

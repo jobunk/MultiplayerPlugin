@@ -2,6 +2,7 @@
 
 #include "MultiplayerGI.h"
 #include "Multiplayer.h"
+#include "UVisionlogger.h"
 
 //void UMultiplayerGI::MapChangeEventC(const FString & s)
 //{

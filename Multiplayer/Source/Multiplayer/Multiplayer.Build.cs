@@ -42,6 +42,7 @@ public class Multiplayer : ModuleRules
 				"SlateCore",
                 "OnlineSubsystem",
                 "OnlineSubsystemUtils",
+                "VisionLogger"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
