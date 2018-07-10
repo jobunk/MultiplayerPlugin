@@ -9,7 +9,7 @@
 
 // Provides a group of global style settings for our game menus! 
 USTRUCT()
-struct VISIONLOGGER_API FGlobalStyle : public FSlateWidgetStyle
+struct UVISIONLOGGER_API FGlobalStyle : public FSlateWidgetStyle
 {
 	GENERATED_USTRUCT_BODY()
 		// Stores a list of Brushes we are using (we aren't using any) into OutBrushes.

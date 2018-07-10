@@ -6,7 +6,7 @@
 #include "MainMenuHUD.h"
 
 // Lays out and controls the Main Menu UI for our tutorial.
-class VISIONLOGGER_API SServerListUI : public SCompoundWidget
+class UVISIONLOGGER_API SServerListUI : public SCompoundWidget
 {
 
 public:

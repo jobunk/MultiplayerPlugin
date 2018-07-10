@@ -10,7 +10,7 @@
  * 
  */
 UCLASS()
-class VISIONLOGGER_API AMainMenuHUD : public AHUD
+class UVISIONLOGGER_API AMainMenuHUD : public AHUD
 {
 	GENERATED_BODY()
 	// Initializes the Slate UI and adds it as widget content to the game viewport.

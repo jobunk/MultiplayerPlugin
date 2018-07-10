@@ -3,7 +3,7 @@
 #include "MainMenuHUD.h"
 #include "MainMenuUI.h"
 #include "ServerListUI.h"
-#include "VisionLogger.h"
+#include "UVisionLogger.h"
 void AMainMenuHUD::PostInitializeComponents()
 {
 	Super::PostInitializeComponents();

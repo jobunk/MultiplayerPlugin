@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
-#include "VisionLogger.h"
 #include "UVisionlogger.h"
 #include "MultiplayerGI.generated.h"
 
@@ -12,7 +11,7 @@
  * 
  */
 UCLASS()
-class VISIONLOGGER_API UMultiplayerGI : public UGameInstance
+class UVISIONLOGGER_API UMultiplayerGI : public UGameInstance
 {
 	GENERATED_BODY()
 	

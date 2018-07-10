@@ -2,7 +2,7 @@
 
 #include "MenuStyles.h"
 #include "SlateGameResources.h" 
-#include "VisionLogger.h"
+#include "UVisionLogger.h"
 
 TSharedPtr<FSlateStyleSet> FMenuStyles::MenuStyleInstance = NULL;
 
@@ -30,7 +30,7 @@ FName FMenuStyles::GetStyleSetName()
 
 TSharedRef<FSlateStyleSet> FMenuStyles::Create()
 {
-	TSharedRef<FSlateStyleSet> StyleRef = FSlateGameResources::New(FMenuStyles::GetStyleSetName(), "/VisionLogger/UI/Styles", "/VisionLogger/UI/Styles");
+	TSharedRef<FSlateStyleSet> StyleRef = FSlateGameResources::New(FMenuStyles::GetStyleSetName(), "/UVisionLogger/UI", "/UVisionLogger/UI");
 	return StyleRef;
 }
 

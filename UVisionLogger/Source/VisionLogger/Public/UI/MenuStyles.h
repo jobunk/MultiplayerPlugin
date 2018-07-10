@@ -8,7 +8,7 @@
 /**
  * 
  */
-class VISIONLOGGER_API FMenuStyles
+class UVISIONLOGGER_API FMenuStyles
 {
 public:
 	// Initializes the value of MenuStyleInstance and registers it with the Slate Style Registry.

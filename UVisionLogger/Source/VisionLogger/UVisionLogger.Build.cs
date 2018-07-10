@@ -1,16 +1,16 @@
-// Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
+// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
 
 using UnrealBuildTool;
 
-public class Multiplayer : ModuleRules
+public class UVisionLogger : ModuleRules
 {
-	public Multiplayer(ReadOnlyTargetRules Target) : base(Target)
+	public UVisionLogger(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
-				"Multiplayer/Public"
+				"UVisionLogger/Public"
 				// ... add public include paths required here ...
 			}
 			);
@@ -18,7 +18,7 @@ public class Multiplayer : ModuleRules
 		
 		PrivateIncludePaths.AddRange(
 			new string[] {
-				"Multiplayer/Private",
+				"UVisionLogger/Private",
 				// ... add other private include paths required here ...
 			}
 			);
@@ -40,9 +40,17 @@ public class Multiplayer : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
+                "RHI",
+                "RenderCore",
+                "UnrealEd",
                 "OnlineSubsystem",
                 "OnlineSubsystemUtils",
-                "VisionLogger"
+                "UPhysicsBasedMC",
+                "UPIDController",
+                "SemLog",
+                "SemLogEd",
+                "UTags"
+
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
@@ -50,8 +58,7 @@ public class Multiplayer : ModuleRules
 		
 		DynamicallyLoadedModuleNames.AddRange(
 			new string[]
-			{   
-                "OnlineSubsystemNull",
+			{
 				// ... add any modules that your module loads dynamically here ...
 			}
 			);

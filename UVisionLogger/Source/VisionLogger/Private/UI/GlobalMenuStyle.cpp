@@ -1,7 +1,7 @@
 // Copyright 2017, Institute for Artificial Intelligence - University of Bremen
 
 #include "GlobalMenuStyle.h" 
-#include "VisionLogger.h" 
+#include "UVisionLogger.h" 
 
 void FGlobalStyle::GetResources(TArray<const FSlateBrush*>& OutBrushes) const
 {

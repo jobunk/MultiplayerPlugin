@@ -10,7 +10,7 @@
  * 
  */
 UCLASS()
-class VISIONLOGGER_API AMultiplayerGameMode : public AGameModeBase
+class UVISIONLOGGER_API AMultiplayerGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
 	

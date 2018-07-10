@@ -1,7 +1,7 @@
 // Copyright 2017, Institute for Artificial Intelligence - University of Bremen
 
 #include "ServerListUI.h"
-#include "VisionLogger.h"
+#include "UVisionLogger.h"
 #include "GlobalMenuStyle.h" 
 #include "MenuStyles.h" 
 #include "MultiplayerGI.h"
