@@ -6,7 +6,7 @@ Versions: UE 4.18 / 4.19
 This plugin enables you to record large numbers of images of Unreal Engine gameplay from many different perspectives. To record images in VR a second PC is used to create and save the images, so it won't impact the main PC's performance. 
  
 
-# Setting up the project:
+# Setting up the project
 
 ## Before compiling:
 
