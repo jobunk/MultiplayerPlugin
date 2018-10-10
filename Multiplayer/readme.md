@@ -1,6 +1,9 @@
 Authors: Johannes Bunk
+
 E-Mail: bunk@uni-bremen.de
+
 Date: October 2018
+
 Versions: UE 4.18 / 4.19 / 4.20  
 
 This plugin is a very simple multiplayer game mode for VR, where the server is a PC with a VR headset and the clients just mirror that world. 
